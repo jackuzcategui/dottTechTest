@@ -1,0 +1,22 @@
+input_dir: ${PROJECT_DIR}/${TARGET_NAME}/DottUIKit/Resources
+output_dir: ${PROJECT_DIR}/${TARGET_NAME}/DottUIKit/Style/
+xcassets:
+  - inputs: Colors.xcassets
+    outputs:
+      templateName: swift5
+      output: DottColorAsset.swift
+      params:
+        enumName: DottColorAsset
+  - inputs: Images.xcassets
+    outputs:
+      templateName: swift5
+      output: DottImageAsset.swift
+      params:
+        enumName: DottImageAsset
+fonts:
+  inputs: FontFamilies
+  outputs:
+    templateName: swift5
+    output: DottFontFamily.swift
+    params:
+      enumName: DottFontFamily
